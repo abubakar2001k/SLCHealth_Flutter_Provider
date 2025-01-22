@@ -20,7 +20,7 @@ class CustomContainer extends StatelessWidget {
       height: height ?? 100.h,
       width:width ??  00.w,
       decoration:decoration ??  BoxDecoration(
-          color: color ?? CustomColor().cmnWhitenColor,
+          color: color ?? CustomColor.cmnWhitenColor,
         boxShadow: boxShadow ?? [
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),

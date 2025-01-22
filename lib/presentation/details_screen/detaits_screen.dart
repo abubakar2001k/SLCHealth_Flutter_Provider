@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:slc_health/presentation/all_products_screen/models/data_model.dart';
 import 'package:slc_health/presentation/details_screen/details_screen_vm.dart';
-import 'package:slc_health/presentation/details_screen/provider/details_provider.dart';
 import 'package:slc_health/presentation/details_screen/widgets/custom_continer_bottom_box.dart';
 import 'package:slc_health/theme/custom_color.dart';
 import 'package:slc_health/widgets/custom_elevated_button.dart';
 import 'package:slc_health/widgets/custom_icon_box.dart';
 import 'package:slc_health/widgets/custom_rating.dart';
-import '../../core/utils/app_routes.dart';
 import '../../theme/custom_fonts.dart';
 import '../../widgets/custom_container.dart';
 import '../../widgets/custom_details_container.dart';
@@ -118,7 +116,7 @@ class DetaitsScreen extends StatelessWidget {
                                         width: 95.w,
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(10),
-                                          color: CustomColor().rattingContiner,
+                                          color: CustomColor.rattingContiner,
                                           boxShadow: [
                                             BoxShadow(
                                               color: Colors.grey.withOpacity(.1),

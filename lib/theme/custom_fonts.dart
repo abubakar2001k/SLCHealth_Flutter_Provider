@@ -5,14 +5,13 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 
 class CustomFonts {
   // Ensure CustomColor is properly initialized
-  static final CustomColor customColor = CustomColor();
 
   // Correct definition of title
   static TextStyle title = GoogleFonts.inder(
     fontWeight: FontWeight.w400,
     height: 43.57 / 36.0,
     fontSize: 20.px,
-    color: customColor.cmnWhitenColor,
+    color: CustomColor.cmnWhitenColor,
     letterSpacing: -0.3,
     // Ensure this is a valid Color
   );
@@ -20,7 +19,7 @@ class CustomFonts {
     fontFamily: 'SFProDisplay',
     // height: 43.57 / 36.0,
     fontSize:13,
-    color: customColor.dtxtolor,
+    color: CustomColor.dtxtolor,
     letterSpacing: -0.41,
     // Ensure this is a valid Color
   );
@@ -45,31 +44,29 @@ class CustomFonts {
     fontWeight: FontWeight.w700,
     height: 43.57 / 36.0,
     fontSize: 30,
-    color: customColor.cmnWhitenColor,
+    color: CustomColor.cmnWhitenColor,
     letterSpacing: -0.3,
     decoration: TextDecoration.none,
 // Adjusted to match static reference
   );
 
   static TextStyle product = TextStyle(
-    // fontFamily: 'SFProDisplay',
-    // fontWeight: FontWeight.w700,
+    fontFamily: 'SFProDisplay',
+    fontWeight: FontWeight.w700,
     height: 43.57 / 36.0,
     fontSize: 50,
-    color: customColor.btnColor,
+    color: CustomColor.btnColor,
     letterSpacing: -0.3,
     decoration: TextDecoration.none,
-// Adjusted to match static reference
   );
   static TextStyle allproductTitte = TextStyle(
     fontSize:30,
     // fontFamily: 'SFProDisplay',
     fontFamily: 'Open Sans',
     fontWeight: FontWeight.w600,
-// Adjusted to match static reference
   );
   static TextStyle productDetailsTittile  = TextStyle(
-  color: CustomColor().dtxtolor,
+  color: CustomColor.dtxtolor,
   fontSize:14.px,
 
   fontStyle: FontStyle.italic,
@@ -87,14 +84,14 @@ fontWeight: FontWeight.w700,
   static TextStyle detailsTextStyle  = TextStyle(
     fontFamily: 'Open Sans',
     fontSize: 10.px,
-    color: CustomColor().dtxtolor,
+    color: CustomColor.dtxtolor,
 
   );
   static TextStyle reviews  = TextStyle(
       fontFamily: 'Open Sans',
       fontWeight: FontWeight.w600,
       fontSize: 13.px,
-    color: CustomColor().reviewCorlor,
+    color: CustomColor.reviewCorlor,
   ) ;
 
   static TextStyle rattingFonts  = TextStyle(

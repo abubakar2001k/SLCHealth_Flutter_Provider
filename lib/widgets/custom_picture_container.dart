@@ -23,7 +23,7 @@ class CustomPictureContainer extends StatelessWidget {
           image: AssetImage('assets/images/unsplash_4qSb_FWhHKs.png'),
           fit:BoxFit.cover,
         ),
-          color: CustomColor().cmnWhitenColor,
+          color: CustomColor.cmnWhitenColor,
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),

@@ -4,7 +4,6 @@ import 'package:slc_health/theme/custom_color.dart';
 class LoginContiner extends StatelessWidget {
   final Widget? child;
    LoginContiner({super.key, this.child});
-  final CustomColor customColor = CustomColor();
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +14,8 @@ class LoginContiner extends StatelessWidget {
 decoration: BoxDecoration(
   gradient: LinearGradient(
       colors:[
-        customColor.gradient1Color,
-        customColor.gradient2Color,
+        CustomColor.gradient1Color,
+        CustomColor.gradient2Color,
       ] ),
 ),
       child: child,

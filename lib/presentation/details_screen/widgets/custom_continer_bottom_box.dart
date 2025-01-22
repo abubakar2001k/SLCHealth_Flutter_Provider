@@ -19,7 +19,7 @@ class CustomContinerBottomBox extends StatelessWidget {
           height: vm.isExpended ?  35.h : 50.h,
           width:  100.w,
           decoration: BoxDecoration(
-              color: CustomColor().cmnWhitenColor,
+              color: CustomColor.cmnWhitenColor,
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5),

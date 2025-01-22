@@ -15,7 +15,7 @@ class CustomRating extends StatelessWidget {
           // Fully filled star
           return Icon(
             Icons.star,
-            color: CustomColor().strColor,
+            color: CustomColor.strColor,
             size: size ?? 23,
           );
         } else if (index < rating!) {
@@ -32,7 +32,7 @@ class CustomRating extends StatelessWidget {
                 clipper: _HalfStarClipper(),
                 child: Icon(
                   Icons.star,
-                  color: CustomColor().strColor,
+                  color: CustomColor.strColor,
                   size: size ?? 23,
                 ),
               ),

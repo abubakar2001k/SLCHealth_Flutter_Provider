@@ -1,8 +1,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:slc_health/widgets/app_bar/custom_bottom_nav_item.dart';
 
+import '../../data/data_provider/custom_bottom_nav_provider.dart';
 
 class BottomNavItem with ChangeNotifier{
 
@@ -43,9 +43,3 @@ CustomBottomNavItem(
   }
 }
 
-// final List<BottomNavItem> navItems = [
-// BottomNavItem(
-// icon: Icons.money,
-// selectedIcon: Icons.home,
-// label: 'Expense',
-// ),

@@ -1,11 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:slc_health/presentation/login-screen/provider/loin_provider.dart';
 import 'package:slc_health/theme/custom_color.dart';
 import 'package:slc_health/theme/custom_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-
 import '../../core/utils/app_routes.dart';
 import '../../widgets/custom_container_login.dart';
 import '../../widgets/custom_elevated_button.dart';
@@ -15,11 +13,6 @@ import 'login_vm.dart';
 class LogInScreen extends StatelessWidget {
   LogInScreen({super.key});
 
-  final CustomColor customColor = CustomColor();
-
-  // final LoinViewModel loinViewModel = LoinViewModel();
-
-// final CustomFonts customFonts = CustomFonts();
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
@@ -28,7 +21,7 @@ class LogInScreen extends StatelessWidget {
         builder: (context, vm, child) {
           return SafeArea(
             child: Scaffold(
-              backgroundColor: customColor.cmnWhitenColor,
+              backgroundColor: CustomColor.cmnWhitenColor,
               body: SingleChildScrollView(
                 child: Column(
                   children: [

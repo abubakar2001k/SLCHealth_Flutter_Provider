@@ -1,17 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:slc_health/core/utils/app_routes.dart';
 import 'package:slc_health/presentation/all_products_screen/models/data_model.dart';
 import 'package:slc_health/presentation/all_products_screen/all_products_vm.dart';
 import 'package:slc_health/presentation/all_products_screen/widgets/custom_card.dart';
-import 'package:slc_health/presentation/details_screen/detaits_screen.dart';
 import 'package:slc_health/theme/custom_fonts.dart';
 import 'package:slc_health/widgets/custom_container.dart';
-
 import '../../widgets/app_bar/Bottom_Nav_Item.dart';
 
 class AllProductsScreen extends StatelessWidget {
-  const AllProductsScreen({super.key});
+   AllProductsScreen({super.key});
+   // Importing TextTheme for  Main Dart........
+  final TextTheme textTheme = TextTheme();
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,7 @@ class AllProductsScreen extends StatelessWidget {
                     childWidget: Center(
                         child: Text(
                       'All Products',
+                      // style: textTheme.bodyLarge,
                       style: CustomFonts.allproductTitte,
                     )),
                   )),
@@ -57,17 +59,14 @@ class AllProductsScreen extends StatelessWidget {
                   DataModel dataModel = vm.products[index];
                   return GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => (DetaitsScreen(
-                                    dataModel: dataModel,
-                                  ))));
+                      Navigator.pushNamed(context,
+                        // arguments for passed the DataModel in Details  Screen..............
+                        AppRoutes.detail_screen, arguments: dataModel,
+                      );
                     },
                     child: CusttomCard(
                       name: '${dataModel.title} ' ?? '',
                       price: '${dataModel.price} AED' ?? '',
-                      // dataModel.price.toString() ?? '2000 UAD',
                       description: dataModel.description ??
                           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, '
                               'sed do eiusmod tempor incididunt ut labore et dolore magna',
